@@ -1,16 +1,16 @@
 @font-face {
     font-family: Kapakana;
-    src: url(Kapakana.ttf);
+    src: url(assets/Kapakana.ttf);
 }
 .all_welcome {
     display: flex;
     flex-direction: column;  /* Stack children vertically */
     align-items: center;     /* Center horizontally */
     justify-content: center; /* Center vertically */
-    min-height: 100vh;       /* Full viewport height */
+    height: 100vh;       /* Full viewport height */
     margin: 0;               /* Remove default margins */
     gap: 20px;           /* Remove default body margin */
-    z-index: 2;
+    z-index: 1;
 }
 body {
     font-family: Kapakana;
@@ -19,7 +19,6 @@ body {
 .welcome_message {
     width: 276px;
     height: 196px;
-    flex-shrink: 0;
 
 
     /* text*/
@@ -33,10 +32,7 @@ body {
 }
 
 .welcome_button_top {
-    display: flex;
     padding: 15px 53px;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     border: 0px;
     background: #FFF;
@@ -52,10 +48,7 @@ body {
 }
 
 .welcome_button_bottom {
-    display: flex;
     padding: 15px 53px;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
     background: #FFF;
 
@@ -71,12 +64,43 @@ body {
 }
 
 .flower_image {
-    object-position: 435px 277px;
+    width: 150px;
+    height: auto;
     z-index: 3;
-    width: 277px;
-    height: 160px;
-    transform: rotate(-90deg);
-    flex-shrink: 0;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
 
-    background: url(assets/flower.png) lightgray -41.502px -206.491px / 136.86% 243.03% no-repeat;
+.butterfly_div {
+    display: flex;
+    align-items: center; 
+    height: 0vh;
+}
+
+.butterfly_image {
+    width: 100px;
+    height: auto;
+    z-index: 3;
+    position: fixed;
+    top: 200px;
+    left: 10px;
+}
+
+.heart_image {
+    height: 100px;
+    width: auto;
+    z-index: 3;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.sonny_angel {
+    height: 150px;
+    width: auto;
+    z-index: 3;
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
 }
