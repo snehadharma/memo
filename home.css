@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Kapakana;
+    src: url(Kapakana.ttf);
+}
+.all_welcome {
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center;     /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh;       /* Full viewport height */
+    margin: 0;               /* Remove default margins */
+    gap: 20px;           /* Remove default body margin */
+}
+body {
+    font-family: Kapakana;
+    background: #FFD9E8;
+}
+.welcome_message {
+    width: 276px;
+    height: 196px;
+    flex-shrink: 0;
+
+
+    /* text*/
+    color: #000;
+    text-align: center;
+    font-family: Kapakana;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcome_button_top {
+    display: flex;
+    padding: 15px 53px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0px;
+    background: #FFF;
+
+    /* text */
+    color: #000;
+    text-align: center;
+    font-family: Kapakana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcome_button_bottom {
+    display: flex;
+    padding: 15px 53px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+
+    /* text */
+    color: #000;
+    text-align: center;
+    font-family: Kapakana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0px;
+}
