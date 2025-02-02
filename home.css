@@ -10,6 +10,7 @@
     min-height: 100vh;       /* Full viewport height */
     margin: 0;               /* Remove default margins */
     gap: 20px;           /* Remove default body margin */
+    z-index: 2;
 }
 body {
     font-family: Kapakana;
@@ -67,4 +68,15 @@ body {
     font-weight: 400;
     line-height: normal;
     border: 0px;
+}
+
+.flower_image {
+    object-position: 435px 277px;
+    z-index: 3;
+    width: 277px;
+    height: 160px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+
+    background: url(assets/flower.png) lightgray -41.502px -206.491px / 136.86% 243.03% no-repeat;
 }
